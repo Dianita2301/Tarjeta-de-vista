@@ -1,0 +1,140 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    padding-left: 60px;
+}
+
+.square{
+    width: 260px;
+    margin: 50px;
+    height: 460px;
+    background-color: hsl(215, 51%, 16%);
+    border-radius: 15px;
+    text-align: left;
+    padding: 21px;
+    box-shadow: -10px 20px 20px 10px hsl(215, 51%, 7%);
+}
+
+.vista{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    object-fit: cover;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.view{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 70px;
+    height: 241px;
+    background-color:hsl(178, 100%, 50%);
+    opacity: 0;
+    transition: width 0.8s, opacity 0.5s;
+    width: 240px;
+}
+
+.square:hover .view {
+    width: 240px;
+    opacity: 35%;
+}
+
+.square h3{
+    color: hsl(0, 0%, 100%);
+    margin-top: 110%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.square h3:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.resumen{
+    font-size: 15px;
+    color: #cecdcdb3;
+}
+
+.plan{
+    background-image: url(images/icon-clock.svg);
+    background-repeat: no-repeat;
+    background-position:63% 0;
+}
+
+.plan-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    position: relative;
+    background-size: contain; /*para que se ajuste al contenedor*/
+}
+
+.valor, .dias{
+    margin: 0;
+    font-size: 13px;
+}
+
+.valor{
+    color: hsl(178, 100%, 50%);
+    margin-left: 20px;
+}
+
+.dias{
+    color: #cecdcdb3;
+}
+
+.linea180{
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+    height: 1px;
+    background-color: #cecdcdb3;
+}
+
+.creacion{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    padding: 10px;
+    font-size: 14px;
+    gap: 8%;
+    margin-top: -5px; 
+    white-space: nowrap;
+}
+.avatar{
+    max-width: 40px;
+    border: 1px solid white;
+    border-radius: 50%; 
+}
+
+.gris{
+    color: #cecdcdb3;
+}
+
+.cian{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.cian:hover{
+    color: white;
+}
